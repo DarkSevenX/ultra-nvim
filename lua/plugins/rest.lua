@@ -1,0 +1,30 @@
+return {
+  -- {
+  --   'rest-nvim/rest.nvim',
+  --   dependencies = {
+  --     'nvim-treesitter/nvim-treesitter',
+  --     opts = function(_,opts)
+  --       opts.ensure_installed = opts.ensure_installed or {}
+  --       table.insert(opts.ensure_installed, 'http')
+  --     end,
+  --   },
+  --   config = function()
+  --     -- Configuración del plugin
+  --     vim.g.rest_nvim = {
+  --       response = {  
+  --         hooks = {  
+  --           format = true, -- Asegúrate de que esté habilitado  
+  --         },  
+  --       },
+  --     }
+  --
+  --     -- Configurar formateador JSON  
+  --     vim.api.nvim_create_autocmd("FileType", {  
+  --       pattern = "json",  
+  --       callback = function(ev)  
+  --         vim.bo[ev.buf].formatprg = "jq --indent 4"  
+  --       end,  
+  --     })
+  --   end,
+  -- }
+}
