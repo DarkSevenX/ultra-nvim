@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ultra Nvim — distribución Neovim moderna: LSP, Mason, Telescope, UI limpia y lista para producir."
+    />
+    <title>Ultra Nvim — Neovim, sin fricción</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="glow glow--1" aria-hidden="true"></div>
+    <div class="glow glow--2" aria-hidden="true"></div>
+
+    <header class="nav" data-nav>
+      <div class="nav__inner container">
+        <a class="nav__brand" href="#">
+          <span class="nav__logo" aria-hidden="true"></span>
+          <span class="nav__title">Ultra Nvim</span>
+        </a>
+        <nav class="nav__links" aria-label="Principal">
+          <a href="#caracteristicas">Características</a>
+          <a href="#lenguajes">Lenguajes</a>
+          <a href="#instalar">Instalar</a>
+          <a
+            class="nav__gh"
+            href="https://github.com/DarkSevenX/ultra-nvim"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </nav>
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-drawer"
+          data-nav-toggle
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav__drawer" id="nav-drawer" hidden data-nav-drawer>
+        <a href="#caracteristicas">Características</a>
+        <a href="#lenguajes">Lenguajes</a>
+        <a href="#instalar">Instalar</a>
+        <a href="https://github.com/DarkSevenX/ultra-nvim" target="_blank" rel="noopener noreferrer"
+          >GitHub</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="hero__eyebrow" data-reveal>
+              <span class="hero__dot"></span> Distribución Neovim
+            </p>
+            <h1 class="hero__headline" data-reveal>
+              Tu IDE en la terminal,
+              <span class="hero__gradient">sin perder el alma de Vim.</span>
+            </h1>
+            <p class="hero__lede" data-reveal>
+              Config pensada para extender: <strong>lazy.nvim</strong>, <strong>Mason</strong>,
+              <strong>LSP</strong>, <strong>Telescope</strong>, árbol de archivos, Git, formato con
+              conform, snippets, Flash, Treesitter, Diffview, sesiones y DAP — inspirada en lo mejor
+              de LazyVim, NvChad, AstroNvim, LunarVim y kickstart.
+            </p>
+            <div class="hero__actions" data-reveal>
+              <a class="btn btn--primary" href="#instalar">Empezar en minutos</a>
+              <a class="btn btn--ghost" href="#caracteristicas">Ver qué incluye</a>
+            </div>
+            <ul class="hero__meta" data-reveal>
+              <li>Neovim ≥ 0.10</li>
+              <li>Lua first</li>
+              <li>UI moderna</li>
+            </ul>
+          </div>
+          <div class="hero__media" data-reveal>
+            <div class="hero__terminal js-hero-terminal" data-tilt>
+              <div class="terminal">
+                <div class="terminal__chrome">
+                  <span></span><span></span><span></span>
+                  <span class="terminal__title">nvim — ultra-nvim-starter</span>
+                </div>
+                <pre class="terminal__body"><code><span class="t-muted">-- init.lua</span>
+<span class="t-kw">require</span>(<span class="t-str">"config.keymaps"</span>)
+<span class="t-kw">require</span>(<span class="t-str">"config.core"</span>)
+<span class="t-kw">require</span>(<span class="t-str">"config.lazy"</span>)
+
+<span class="t-muted">-- LSP · Mason · Telescope · DAP · UI</span>
+<span class="t-fn">vim</span>.<span class="t-fn">opt</span>.<span class="t-prop">titlestring</span> = <span class="t-str">"Ultra Nvim — %t"</span></code></pre>
+              </div>
+            </div>
+            <figure class="hero__capture js-hero-capture" hidden>
+              <img class="hero__capture-img" src="" alt="" decoding="async" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--collage" aria-label="Collage de capturas">
+        <div class="container">
+          <figure class="collage" data-reveal>
+            <img
+              src="assets/collage.png"
+              alt="Collage de capturas de Ultra Nvim en el editor"
+              width="1909"
+              height="979"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <div class="franja" aria-hidden="true"></div>
+
+      <section class="section" id="caracteristicas">
+        <div class="container">
+          <header class="section__head" data-reveal>
+            <h2>Hecha para fluir</h2>
+            <p>
+              Lo esencial ya resuelto; tú añades opiniones. Misma filosofía que las distros que
+              admiras: defaults sensatos, código legible, extensiones sin drama.
+            </p>
+          </header>
+          <div class="features">
+            <article class="card card--feature" data-reveal>
+              <div class="card__icon" aria-hidden="true">⚡</div>
+              <h3>Rápida por diseño</h3>
+              <p>
+                <strong>lazy.nvim</strong> gestiona plugins con carga diferida. Menos espera, más
+                tiempo editando.
+              </p>
+            </article>
+            <article class="card card--feature" data-reveal>
+              <div class="card__icon" aria-hidden="true">◆</div>
+              <h3>LSP y Mason</h3>
+              <p>
+                Servidores y herramientas alineados con Mason; adjuntos LSP y utilidades en un solo
+                lugar.
+              </p>
+            </article>
+            <article class="card card--feature" data-reveal>
+              <div class="card__icon" aria-hidden="true">◎</div>
+              <h3>UI que no estorba</h3>
+              <p>
+                Tema, barra de estado, árbol y buscadores integrados para una experiencia coherente
+                de punta a punta.
+              </p>
+            </article>
+            <article class="card card--feature" data-reveal>
+              <div class="card__icon" aria-hidden="true">⎇</div>
+              <h3>Git y diff</h3>
+              <p>
+                Flujo Git cómodo y <strong>Diffview</strong> cuando necesitas ver el bosque y los
+                árboles.
+              </p>
+            </article>
+            <article class="card card--feature" data-reveal>
+              <div class="card__icon" aria-hidden="true">⌘</div>
+              <h3>Productividad</h3>
+              <p>
+                <strong>Telescope</strong>, Flash, surround, textobjects Treesitter, formato con
+                conform y snippets listos.
+              </p>
+            </article>
+            <article class="card card--feature" data-reveal>
+              <div class="card__icon" aria-hidden="true">⏻</div>
+              <h3>Debug y sesiones</h3>
+              <p>
+                <strong>DAP</strong> para depurar donde código y terminal conviven;
+                <strong>AutoSession</strong> para retomar el contexto.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="franja franja--compacta" aria-hidden="true"></div>
+
+      <section class="section section--alt" id="lenguajes">
+        <div class="container">
+          <header class="section__head" data-reveal>
+            <h2>Un stack, muchos lenguajes</h2>
+            <p>
+              Desde JS/TS hasta Scala, pasando por Python, Go, Rust, Java, Ruby, Swift y más — la
+              base está preparada para crecer contigo.
+            </p>
+          </header>
+          <div class="lang-marquee" aria-hidden="true">
+            <div class="lang-marquee__track">
+              <span>JavaScript</span><span>TypeScript</span><span>JSON</span><span>Python</span
+              ><span>Bash</span><span>Markdown</span><span>C / C++</span><span>C#</span
+              ><span>Go</span><span>HCL</span><span>Terraform</span><span>Java</span
+              ><span>Julia</span><span>Lua</span><span>PowerShell</span><span>QML</span
+              ><span>Ruby</span><span>Rust</span><span>Scala</span><span>Swift</span>
+              <span>JavaScript</span><span>TypeScript</span><span>JSON</span><span>Python</span
+              ><span>Bash</span><span>Markdown</span><span>C / C++</span><span>C#</span
+              ><span>Go</span><span>HCL</span><span>Terraform</span><span>Java</span
+              ><span>Julia</span><span>Lua</span><span>PowerShell</span><span>QML</span
+              ><span>Ruby</span><span>Rust</span><span>Scala</span><span>Swift</span>
+            </div>
+          </div>
+          <p class="section__footnote" data-reveal>
+            Requisitos recomendados: <strong>Git</strong> y herramientas de compilación en Unix
+            (Treesitter, LuaSnip). Ajusta <code>vim.g.ultra_tab_bar</code> a
+            <code>"tabs"</code> o <code>"buffers"</code> según prefieras pestañas
+            <span class="nowrap">:tab</span> o bufferline.
+          </p>
+        </div>
+      </section>
+
+      <div class="franja" aria-hidden="true"></div>
+
+      <section class="section" id="instalar">
+        <div class="container install">
+          <header class="section__head" data-reveal>
+            <h2>Instalación</h2>
+            <p>
+              Copia el starter en tu configuración de Neovim. Haz backup de
+              <code>~/.config/nvim</code> si ya tienes una config.
+            </p>
+          </header>
+          <div class="install__panel" data-reveal>
+            <div class="install__tabs" role="tablist" aria-label="Método de instalación">
+              <button type="button" class="is-active" role="tab" aria-selected="true" data-tab="clone">
+                Git clone
+              </button>
+              <button type="button" role="tab" aria-selected="false" data-tab="symlink">
+                Repo local
+              </button>
+            </div>
+            <div class="install__blocks">
+              <div class="install__block is-visible" data-panel="clone" role="tabpanel">
+                <div class="code-block">
+                  <button type="button" class="code-block__copy" data-copy="#cmd-clone">
+                    Copiar
+                  </button>
+                  <pre><code id="cmd-clone">git clone https://github.com/DarkSevenX/ultra-nvim-starter.git ~/.config/nvim
+cd ~/.config/nvim &amp;&amp; nvim</code></pre>
+                </div>
+              </div>
+              <div class="install__block" data-panel="symlink" role="tabpanel" hidden>
+                <div class="code-block">
+                  <button type="button" class="code-block__copy" data-copy="#cmd-symlink">
+                    Copiar
+                  </button>
+                  <pre><code id="cmd-symlink">ln -sfn "$(pwd)/ultra-nvim-starter" ~/.config/nvim
+nvim</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <span class="nav__logo nav__logo--sm" aria-hidden="true"></span>
+          <span>Ultra Nvim</span>
+        </div>
+        <a href="https://github.com/DarkSevenX/ultra-nvim" target="_blank" rel="noopener noreferrer"
+          >Ver repositorio</a
+        >
+      </div>
+    </footer>
+
+    <script src="assets/js/site-config.js"></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
