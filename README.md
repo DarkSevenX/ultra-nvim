@@ -8,7 +8,7 @@
 [![Lua](https://img.shields.io/badge/config-Lua-000080?style=for-the-badge&logo=lua&logoColor=white)](https://www.lua.org/)
 [![lazy.nvim](https://img.shields.io/badge/plugins-lazy.nvim-990000?style=for-the-badge)](https://github.com/folke/lazy.nvim)
 
-**Config extensible** con *lazy.nvim*, Mason, LSP nativo, Telescope, árbol de archivos, Git, **conform**, snippets, Flash, Treesitter, Diffview, sesiones y DAP — inspirada en lo mejor de **LazyVim**, **NvChad**, **AstroNvim**, **LunarVim** y **kickstart**.
+**Config extensible** con *lazy.nvim*, Mason, LSP nativo, Telescope, árbol de archivos, Git, **conform**, snippets, Flash, Treesitter, Diffview, sesiones y DAP.
 
 [Instalación](#-instalación) · [Características](#-características) · [Lenguajes](#-lenguajes) · [Sitio web](#-sitio-web-github-pages)
 
@@ -88,9 +88,3 @@ El núcleo vive en **`ultra-nvim-starter/`** — por ejemplo:
 - `lua/plugins/` — módulos por herramienta (Telescope, Mason, DAP, UI…)
 
 ---
-
-
-## Créditos
-
-Inspiración y hombro sobre el que se apoya este proyecto: la comunidad Neovim y las distros mencionadas arriba. ¡Gracias a quienes mantienen el ecosistema Lua y los plugins que hoy dan forma a Ultra Nvim.
-
